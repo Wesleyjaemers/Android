@@ -7,12 +7,119 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/AndroidATC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Android ATC Calculator"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
 
+    <EditText
+        android:id="@+id/Number1"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_Number1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="153dp"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="153dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/txt_Number1"
+        android:layout_toRightOf="@+id/txt_Number1"
+        android:hint="Enter The First Number"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <EditText
+        android:id="@+id/Number2"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="152dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter The Second Number"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Number1"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <Button
+        android:id="@+id/buttons_plus"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/buttons_minus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+    <Button
+        android:id="@+id/buttons_minus"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/buttons_multiply"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttons_plus"
+        app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+    <Button
+        android:id="@+id/buttons_multiply"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="*"
+        app:layout_constraintEnd_toStartOf="@+id/buttons_divide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttons_minus"
+        app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+    <Button
+        android:id="@+id/buttons_divide"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttons_multiply"
+        app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+    <TextView
+        android:id="@+id/result_view"
+        android:layout_width="124dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
 </android.support.constraint.ConstraintLayout>
