@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Pizzazza</string>
+    <string name="pizza_shop">Pizzazza Shoppa</string>
+    <string name="choose_your_pizza">Choose your pizza:</string>
+    <string name="choose_your_toppings">Choose your toppings:</string>
+    <string name="onions">Onions</string>
+    <string name="olives">Olives</string>
+    <string name="ansjovis">Ansjovis</string>
+    <string name="place_your_order">Place your order</string>
+    <string name="it_s_a_pizza">it\'s a pizza</string>
+    <string name="small_5euro">Small(5euro)</string>
+    <string name="medium_7euro">Medium(7euro)</string>
+    <string name="large_7euro">Large (9euro)</string>
+</resources>

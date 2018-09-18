@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">lesson_08_dialogs</string>
+    <string name="save">Save</string>
+    <string name="download">Download</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+</resources>

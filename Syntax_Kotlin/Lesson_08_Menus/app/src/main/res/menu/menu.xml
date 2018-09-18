@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item1_ID"
+        android:title="Android Application Development Course" />
+    <item
+        android:id="@+id/item2_ID"
+        android:title="Android Security Essentials Course" />
+    <item
+        android:id="@+id/item3_ID"
+        android:title="Android Applications UI/UX Design Course" />
+</menu>
