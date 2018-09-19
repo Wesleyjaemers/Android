@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
 
                 stackBuilder.addNextIntent(resultIntent)
                 val resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT)
-                mBuilder.setContentInfo(resultPendingIntent)
+                mBuilder.setContentIntent(resultPendingIntent)
                 val mNotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
                 mNotificationManager.notify(2, mBuilder.build())
                 return super.onOptionsItemSelected(item)
