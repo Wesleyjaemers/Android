@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Main Menu</string>
+    <string name="app_name">GameWish</string>
     <string name="login">Login</string>
     <string name="about">About</string>
     <string name="quit">Quit</string>
@@ -9,4 +9,5 @@
     <string name="Username">Username:</string>
     <string name="username">username</string>
     <string name="show_password">Show password</string>
+    <string name="register">Register</string>
 </resources>

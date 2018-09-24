@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ArrayElements">
+    <item>1e tag</item>
+    <item>2e tag</item>
+    <item>3e tag</item>
+    <item>4e tag</item>
+    <item>5e tag</item>
+    </string-array>
+</resources>

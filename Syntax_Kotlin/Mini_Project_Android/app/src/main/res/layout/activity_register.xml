@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:theme="@style/AppTheme"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/tview_reg_password_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="312dp"
+        android:text="Password"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tview_reg_username_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="312dp"
+        android:text="Username"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tview_reg_adress_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="172dp"
+        android:text="Adress"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tview_reg_firstname_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="96dp"
+        android:text="First name"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tview_reg_lastname_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="96dp"
+        android:text="Last name"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tview_reg_birthdate_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="244dp"
+        android:text="Date of birth"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_reg_lastname_ID"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tview_reg_lastname_ID" />
+
+    <EditText
+        android:id="@+id/input_reg_firstname_ID2"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tview_reg_firstname_ID" />
+
+    <EditText
+        android:id="@+id/input_reg_adress_ID"
+        android:layout_width="280dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tview_reg_adress_ID" />
+
+    <EditText
+        android:id="@+id/input_reg_date_ID"
+        android:layout_width="99dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/tview_reg_birthdate_ID"
+        tools:layout_editor_absoluteX="28dp" />
+
+    <EditText
+        android:id="@+id/input_reg_username_ID"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tview_reg_username_ID" />
+
+    <EditText
+        android:id="@+id/input_reg_username_ID2"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textVisiblePassword"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tview_reg_password_ID" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
