@@ -1,18 +1,26 @@
 package com.example.vdabcursist.mini_project_android
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
+import android.view.View
 
-class MainMenu : AppCompatActivity() {
+class MainMenu : MenuItems() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
 
     }
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.main_menu, menu)
-        return true
+
+    //Buttons
+    fun goToCreateList (view: View){
+        var x = Intent(this, CreateList::class.java)
+        startActivity(x)
     }
+
+    fun goToLists (view: View){
+        var x = Intent(this, Lists::class.java)
+        startActivity(x)
+    }
+
 }

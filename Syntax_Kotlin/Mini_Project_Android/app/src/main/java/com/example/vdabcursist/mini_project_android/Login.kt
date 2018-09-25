@@ -8,7 +8,7 @@ import android.view.Menu
 import android.view.View
 
 
-class Login : AppCompatActivity() {
+class Login : MenuItems() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,16 +17,13 @@ class Login : AppCompatActivity() {
         val constraintLayout = findViewById(R.id.constraint_layout_ID) as ConstraintLayout
         constraintLayout.setBackgroundResource(R.drawable.background_main)
     }
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.main_menu, menu)
-        return true
-    }
+
+    //Buttons
 
     fun goToRegister (view: View){
         var x = Intent(this, Register::class.java)
         startActivity(x)
     }
-
 
 }
 

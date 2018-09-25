@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
     android:theme="@style/AppTheme"
     tools:context=".Register">
 
@@ -33,12 +32,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tview_reg_adress_ID"
+        android:id="@+id/tview_reg_address_ID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="172dp"
-        android:text="Adress"
+        android:text="Address"
         android:textColor="@color/colorAccent"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,7 +113,7 @@
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tview_reg_adress_ID" />
+        app:layout_constraintTop_toBottomOf="@+id/tview_reg_address_ID" />
 
     <EditText
         android:id="@+id/input_reg_date_ID"
@@ -125,8 +124,8 @@
         android:hint="DD/MM/YYYY"
         android:inputType="date"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@+id/tview_reg_birthdate_ID"
-        tools:layout_editor_absoluteX="28dp" />
+        app:layout_constraintStart_toStartOf="@+id/tview_reg_birthdate_ID"
+        app:layout_constraintTop_toBottomOf="@+id/tview_reg_birthdate_ID" />
 
     <EditText
         android:id="@+id/input_reg_username_ID"
@@ -163,4 +162,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 </android.support.constraint.ConstraintLayout>

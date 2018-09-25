@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainMenu"
-    android:theme="@style/AppTheme"
-    android:background="@color/background">
+    android:theme="@style/AppTheme">
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fbtn_list_add_ID"
@@ -16,6 +15,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
         android:clickable="true"
+        android:onClick="goToCreateList"
         app:backgroundTint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,9 +28,13 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/tview_display_username_ID"
@@ -38,17 +42,19 @@
         android:layout_height="22dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:text="Username"
         android:textColor="@color/colorAccent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_edit_lists_ID"
         android:layout_width="94dp"
         android:layout_height="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="56dp"
+        android:onClick="goToLists"
         android:text="edit lists"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,20 +62,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_change_user_ID"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="change user"
+        android:text="Delete List"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/rview_lists_ID"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.571" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_edit_lists_ID"
+        app:layout_constraintVertical_bias="0.002" />
 
 </android.support.constraint.ConstraintLayout>
 
