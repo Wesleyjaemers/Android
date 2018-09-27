@@ -82,7 +82,7 @@
     <EditText
         android:id="@+id/input_reg_lastname_ID"
         android:layout_width="140dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginEnd="28dp"
         android:layout_marginTop="4dp"
         android:ems="10"
@@ -92,9 +92,9 @@
         app:layout_constraintTop_toBottomOf="@+id/tview_reg_lastname_ID" />
 
     <EditText
-        android:id="@+id/input_reg_firstname_ID2"
+        android:id="@+id/input_reg_firstname_ID"
         android:layout_width="140dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="4dp"
         android:ems="10"
@@ -140,7 +140,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tview_reg_username_ID" />
 
     <EditText
-        android:id="@+id/input_reg_username_ID2"
+        android:id="@+id/input_reg_password_ID"
         android:layout_width="140dp"
         android:layout_height="35dp"
         android:layout_marginEnd="24dp"
@@ -158,17 +158,20 @@
         android:layout_marginBottom="68dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:onClick="onClickRegister"
         android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tview_test_username_ID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:textColor="@android:color/white"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

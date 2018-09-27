@@ -1,7 +1,6 @@
 package com.example.vdabcursist.mini_project_android
 
 import com.j256.ormlite.dao.Dao
-import java.util.*
 import com.j256.ormlite.field.DatabaseField
 import com.j256.ormlite.table.DatabaseTable
 
@@ -17,10 +16,16 @@ data class Users (
         var lastname: String?=null,
 
         @DatabaseField
-        var address : Date?=null,
+        var address : String?=null,
 
         @DatabaseField
-        var birthdate : Date?=null
+        var birthdate : String?=null,
+
+        @DatabaseField
+        var username : String?=null,
+
+        @DatabaseField
+        var password : String?=null
 )
 
 class UserDao{
@@ -36,6 +41,12 @@ class UserDao{
     fun update(user: Users) = dao.update(user)
     fun delete(user: Users) = dao.delete(user)
     fun queryForAll() = dao.queryForAll()
+    fun getUsername(y:String) : String? {
+        var x :MutableList<Users>
+        x = dao.queryForEq("username", y)
+        return x.get(0).username
+    }
+
     fun removeAll(){
         for (table in queryForAll()){
             dao.delete(table)
