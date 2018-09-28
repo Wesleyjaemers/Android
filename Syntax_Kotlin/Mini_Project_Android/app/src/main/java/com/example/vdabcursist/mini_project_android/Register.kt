@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.example.vdabcursist.mini_project_android.UserDao.Companion.dao
+
 import kotlinx.android.synthetic.main.activity_register.*
 
 class Register : MenuItems() {
@@ -24,16 +24,16 @@ class Register : MenuItems() {
         val regUsername = input_reg_username_ID.text.toString()
         val regPassword = input_reg_password_ID.text.toString()
 
-        if (!regFirstName.isNullOrEmpty() && !regLastName.isNullOrEmpty() && !regAddress.isNullOrEmpty() && !regBirthDate.isNullOrEmpty() && !regUsername.isNullOrEmpty() && !regPassword.isNullOrEmpty()){
-            if(!checkUsername(regUsername)){
-            userDao.add(Users(null, regFirstName, regLastName, regAddress, regBirthDate, regUsername, regPassword))
-            goToLogin()
+        if (!regFirstName.isNullOrEmpty() && !regLastName.isNullOrEmpty() && !regAddress.isNullOrEmpty() && !regBirthDate.isNullOrEmpty() && !regUsername.isNullOrEmpty() && !regPassword.isNullOrEmpty()) {
+            if (!checkUsername(regUsername)) {
+                userDao.add(Users(null, regFirstName, regLastName, regAddress, regBirthDate, regUsername, regPassword))
+                goToLogin()
 
-            }else{
+            } else {
                 Toast.makeText(this, "Username not available", Toast.LENGTH_SHORT).show()
             }
 
-        }else{
+        } else {
             Toast.makeText(this, "Please fill in ALL fields", Toast.LENGTH_SHORT).show()
         }
     }
@@ -45,10 +45,11 @@ class Register : MenuItems() {
         startActivity(x)
     }
 
-    fun checkUsername (z: String): Boolean{
-        if (z == dao.queryForEq("username", z).get(0).username){
-
+    fun checkUsername (z: String): Boolean {
+        if (z == userDao.getUsername(z)) {
+            return true
         }
+        return false
     }
 
 }

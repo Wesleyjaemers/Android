@@ -3,13 +3,13 @@ package com.example.vdabcursist.mini_project_android
 import android.os.Bundle
 import android.view.View
 import android.webkit.WebViewClient
-import kotlinx.android.synthetic.main.activity_create_list.*
+import kotlinx.android.synthetic.main.activity_edit_list.*
 
-class CreateList : MenuItems() {
+class EditList : MenuItems() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_create_list)
+        setContentView(R.layout.activity_edit_list)
 
         loadWebview()
     }

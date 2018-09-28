@@ -5,6 +5,6 @@
     <color name="colorAccent">#fdfdfd</color>
     <color name="checkbox">#fafafa</color>
     <color name="background">#505050</color>
-    <color name="text_color_primary">#ddfcfcfc</color>
+    <color name="text_color_primary">#fcfcfc</color>
     <color name="background_material_light">#828282</color>
 </resources>

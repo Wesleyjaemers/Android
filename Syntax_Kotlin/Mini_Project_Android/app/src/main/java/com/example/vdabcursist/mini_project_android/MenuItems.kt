@@ -4,7 +4,6 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 
 open class MenuItems: AppCompatActivity() {
 
@@ -29,7 +28,7 @@ open class MenuItems: AppCompatActivity() {
                 return super.onOptionsItemSelected(item)
             }
             R.id.menu_lists -> {
-                x = Intent(this, Lists::class.java)
+                x = Intent(this, List::class.java)
                 startActivity(x)
                 return super.onOptionsItemSelected(item)
             }

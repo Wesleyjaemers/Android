@@ -36,6 +36,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
+        android:onClick="onClickQuit"
         android:text="@string/quit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -62,6 +63,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="320dp"
+        android:onClick="onClickLogin"
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -83,7 +85,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_login_ID" />
 
     <EditText
-        android:id="@+id/input_username_ID"
+        android:id="@+id/input_log_username_ID"
         android:layout_width="196dp"
         android:layout_height="35dp"
         android:layout_marginEnd="8dp"
@@ -110,14 +112,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/input_username_ID"
-        app:layout_constraintTop_toBottomOf="@+id/input_username_ID"
+        app:layout_constraintStart_toStartOf="@+id/input_log_username_ID"
+        app:layout_constraintTop_toBottomOf="@+id/input_log_username_ID"
         app:layout_constraintVertical_bias="0.048"
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="@color/checkbox">
 
         <EditText
-            android:id="@+id/input_password_ID"
+            android:id="@+id/input_log_password_ID"
             style="@android:style/Widget.DeviceDefault.EditText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -42,10 +42,22 @@ class UserDao{
     fun delete(user: Users) = dao.delete(user)
     fun queryForAll() = dao.queryForAll()
     fun getUsername(y:String) : String? {
-        var x :MutableList<Users>
-        x = dao.queryForEq("username", y)
-        return x.get(0).username
+        var usr :MutableList<Users>
+        usr = dao.queryForEq("username", y)
+        if(usr.size>0){
+        return usr.get(0).username
+        }
+        else return null
     }
+    fun getPassword(y:String) : String? {
+        var pw :MutableList<Users>
+        pw = dao.queryForEq("password", y)
+        if(pw.size>0){
+            return pw.get(0).password
+        }
+        else return null
+    }
+
 
     fun removeAll(){
         for (table in queryForAll()){
